@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Please register your interest</h2>
+
+    <form action="/register" method="POST">
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Available on :</td>
+                <td>
+                    <input type="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td>Vegetarian :</td>
+                <td>
+                    <input type="radio" name="vegetarian" value="yes"> Yes
+                    <input type="radio" name="vegetarian" value="no"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies :</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="jogging"> Jogging
+                    <input type="checkbox" name="hobbies" value="movie"> Movie
+                    <input type="checkbox" name="hobbies" value="cycling"> Cycling
+                    <input type="checkbox" name="hobbies" value="reading"> Reading
+                </td>
+            </tr>
+            <tr>
+                <td>Languages :</td>
+                <td>
+                    <select name="language">
+                        <option value="english">English</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="malay">Malay</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Comments :</td>
+                <td>
+                    <textarea name="comments" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
